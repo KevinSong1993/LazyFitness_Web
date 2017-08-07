@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "")
+@Table(name = "t_user")
 public class UserModel {
 
     public UserModel(){
@@ -26,7 +26,7 @@ public class UserModel {
     @Id
     @GenericGenerator(name="Generator",strategy = "uuid2")
     @GeneratedValue(generator = "Generator")
-    @Column(nullable = false)
+    @Column(name = "id", length = 36, nullable = false)
     public String getId(){
         return id;
     }
