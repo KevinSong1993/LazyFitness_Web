@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 
 /**
  * 用户接口
- * */
+ **/
 @Controller("userAction")
 @RequestMapping("/user")
 public class UserAction {
@@ -28,6 +28,7 @@ public class UserAction {
     public String signIn(){
         return "signin";
     }
+
     @RequestMapping("/signout")
     @ResponseBody
     public String signOut(){
