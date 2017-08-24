@@ -13,6 +13,7 @@
           <element id="library" level="project" name="Hibernate 5.2.10-5.2.10" />
           <element id="library" level="project" name="c3p0:0.9.5.2" />
           <element id="library" level="project" name="mysql-connector-java:5.1.43" />
+          <element id="library" level="project" name="spring-jade4j:1.2.5" />
         </element>
       </element>
     </root>
