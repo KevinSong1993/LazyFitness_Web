@@ -20,7 +20,7 @@ public class UserAction {
 
     @RequestMapping("/signup")
     public ModelAndView signUp(){
-        ModelAndView mv = new ModelAndView("header");
+        ModelAndView mv = new ModelAndView("index");
         mv.addObject("title","miaomiao");
         return mv;
     }

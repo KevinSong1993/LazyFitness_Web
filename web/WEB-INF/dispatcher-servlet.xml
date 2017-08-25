@@ -17,7 +17,7 @@
         </property>
     </bean>
     <mvc:resources mapping="/views/plugins/**" location="/views/plugins/"/>
-
+    <mvc:resources mapping="/favicon.ico" location="/"/>
     <bean id="templateLoader" class="de.neuland.jade4j.spring.template.SpringTemplateLoader">
         <property name="basePath" value="/views/" />
     </bean>

@@ -1,0 +1,91 @@
+extends header
+
+block content
+    div(id='page-wrapper')
+        div(class='row')
+            div(class='col-lg-12')
+                h1(class='page-header') Dashboard
+        div(class='row')
+            div(class='col-lg-3 col-md-6')
+                div(class='panel panel-primary')
+                    div(class='panel-heading')
+                        div(class='row')
+                            div(class='col-xs-3')
+                                i(class='fa fa-comments fa-5x')
+                            div(class='col-xs-9 text-right')
+                                div(class='huge') 26
+                                div New Comments!
+                    a(href='#')
+                        div(class='panel-footer')
+                            span(class='pull-left') View Details
+                            span(class='pull-right')
+                                i(class='fa fa-arrow-circle-right')
+                            div(class='clearfix')
+            div(class='col-lg-3 col-md-6')
+                div(class='panel panel-green')
+                    div(class='panel-heading')
+                        div(class='row')
+                            div(class='col-xs-3')
+                                i(class='fa fa-tasks fa-5x')
+                            div(class='col-xs-9 text-right')
+                                div(class='huge') 12
+                                div New Tasks!
+                    a(href='#')
+                        div(class='panel-footer')
+                            span(class='pull-left') View Details
+                            span(class='pull-right')
+                                i(class='fa fa-arrow-circle-right')
+                            div(class='clearfix')
+            div(class='col-lg-3 col-md-6')
+                div(class='panel panel-yellow')
+                    div(class='panel-heading')
+                        div(class='row')
+                            div(class='col-xs-3')
+                                i(class='fa fa-shopping-cart fa-5x')
+                            div(class='col-xs-9 text-right')
+                                div(class='huge') 124
+                                div New Orders!
+                    a(href='#')
+                        div(class='panel-footer')
+                            span(class='pull-left') View Details
+                            span(class='pull-right')
+                                i(class='fa fa-arrow-circle-right')
+                            div(class='clearfix')
+            div(class='col-lg-3 col-md-6')
+                div(class='panel panel-primary')
+                    div(class='panel-heading')
+                        div(class='row')
+                            div(class='col-xs-3')
+                                i(class='fa fa-support fa-5x')
+                            div(class='col-xs-9 text-right')
+                                div(class='huge') 13
+                                div New Tickets!
+                    a(href='#')
+                        div(class='panel-footer')
+                            span(class='pull-left') View Details
+                            span(class='pull-right')
+                                i(class='fa fa-arrow-circle-right')
+                            div(class='clearfix')
+        div(class='row')
+            div(class='col-lg-8')
+                div(class='panel panel-default')
+                    div(class='panel-heading')
+                        i(class='fa fa-bar-chart-o fa-fw')
+                        | Area Chart Example
+                        div(class='pull-right')
+                            div(class='btn-group')
+                                button(type='button',class='btn btn-default btn-xs dropdown-toggle',data-toggle='dropdown')
+                                    | Actions
+                                    span(class='caret')
+                                ul(class='dropdown-menu pull-right',role='menu')
+                                    li
+                                        a(href='#') Action
+                                    li
+                                        a(href='#') Another action
+                                    li
+                                        a(href='#') Something else here
+                                    li(class='divider')
+                                    li
+                                        a(href='#') Separated link
+                    div(class='panel-body')
+                        div(id='morris-area-chart')

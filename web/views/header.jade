@@ -1,7 +1,7 @@
 doctype html
 html
     head
-        title= 'miao'
+        title= title
         meta(charset='UTF-8')
         meta(http-equiv='X-UA-Compatible',content='IE=edge')
         meta(name='viewport',content='width=devide-width,initial-scale=1')
@@ -25,6 +25,7 @@ html
         <!-- Morris Charts JavaScript -->
         script(src='../views/plugins/raphael/raphael.min.js')
         script(src='../views/plugins/morrisjs/morris.min.js')
+        script(src='../views/plugins/morris-data.js')
         <!-- Custom Theme JavaScript -->
         script(src='../views/plugins/sb-admin-2/js/sb-admin-2.js')
 
@@ -273,4 +274,4 @@ html
                                         a(href="blank.html") Blank Page
                                     li
                                         a(href="login.html") Login Page
-        block content
+            block content
