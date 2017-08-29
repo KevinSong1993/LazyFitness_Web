@@ -17,6 +17,7 @@ public class UserModel {
     private String name;
     private String mobile;
     private String password;
+    private int user_from;
 
     private String create_name;
     private Timestamp create_time;
@@ -56,6 +57,14 @@ public class UserModel {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Column(name = "user_from", length = 11, nullable = true)
+    public int getUserFrom() {
+        return user_from;
+    }
+    public void setUserFrom(int user_from) {
+        this.user_from = user_from;
     }
 
     @Column(name = "create_name", length = 30, nullable = true)
