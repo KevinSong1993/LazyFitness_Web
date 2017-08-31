@@ -25,6 +25,13 @@ block content
                                     for column in columns
                                         th= column
                             tbody
+                                for tabledata in tabledatas
+                                    tr
+                                        td= tabledata.get(columns[0])
+                                        td= tabledata.get(columns[1])
+                                        td= tabledata.get(columns[2])
+                                        td= tabledata.get(columns[3])
+                                        td= tabledata.get(columns[4])
     script(type='text/javascript').
         $(document).ready(function () {
             $('#dataTables-example').DataTable({

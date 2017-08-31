@@ -1,5 +1,6 @@
 package action;
 
+import com.alibaba.fastjson.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,12 +27,10 @@ public class IndexAction {
     @RequestMapping("/table")
     public ModelAndView table(){
         ModelAndView mv = new ModelAndView("table");
-//        mv.addObject("title","Admin");
-//        ArrayList<String> columns = new ArrayList<>();
-//        columns.add("name");
-//        columns.add("age");
         String[] columns = {"Rendering engine","Browser","Platform(s)","Engine version","CSS grade"};
         mv.addObject("columns", columns);
+        JSONArray tabledatas = JSONArray.parseArray("[{\"Rendering engine\":\"Trident\",\"Browser\":\"Internet Explorer 4.0\",\"Platform(s)\":\"Win 95+\",\"Engine version\":\"4\",\"CSS grade\":\"X\"},{\"Rendering engine\":\"Trident\",\"Browser\":\"Internet Explorer 5.0\",\"Platform(s)\":\"Win 95+\",\"Engine version\":\"5\",\"CSS grade\":\"C\"}]");
+        mv.addObject("tabledatas",tabledatas);
         return mv;
     }
 
