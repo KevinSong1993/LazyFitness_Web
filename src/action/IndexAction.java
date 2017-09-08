@@ -10,16 +10,17 @@ import java.util.ArrayList;
 @Controller("index")
 @RequestMapping("/")
 public class IndexAction {
-    @RequestMapping("/")
-    public ModelAndView signin(){
-        ModelAndView mv = new ModelAndView("login");
+
+    @RequestMapping({"/", "/index"})
+    public ModelAndView index(){
+        ModelAndView mv = new ModelAndView("index");
 //        mv.addObject("title","Admin");
         return mv;
     }
 
-    @RequestMapping("/index")
-    public ModelAndView index(){
-        ModelAndView mv = new ModelAndView("index");
+    @RequestMapping("/signin")
+    public ModelAndView signin(){
+        ModelAndView mv = new ModelAndView("login");
 //        mv.addObject("title","Admin");
         return mv;
     }
